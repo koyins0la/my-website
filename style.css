@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c084fc, #60a5fa, #f9a8d4);
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f9a8d4;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* CARD */
+.card {
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 170px;
+    height: 170px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 4px solid white;
+    box-shadow: 0 0 25px #f9a8d4;
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* PROJECTS */
+.projects img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #c084fc;
+}
+
+/* FORM */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(to right, #c084fc, #f9a8d4);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 95%;
+    }
+}
